@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Jackie Gan</title>
+    <link>https://jiajingan.github.io/posts/</link>
+    <description>Recent content in Posts on Jackie Gan</description>
+    <image>
+      <url>https://jiajingan.github.io/papermod-cover.png</url>
+      <link>https://jiajingan.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Mar 2022 16:14:14 -0400</lastBuildDate><atom:link href="https://jiajingan.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro</title>
+      <link>https://jiajingan.github.io/posts/intro/</link>
+      <pubDate>Tue, 15 Mar 2022 16:14:14 -0400</pubDate>
+      
+      <guid>https://jiajingan.github.io/posts/intro/</guid>
+      <description>Hello World!
+We all start from somewhere! :))</description>
+    </item>
+    
+  </channel>
+</rss>
