@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jackie Gan</title>
-    <link>https://jiajingan.github.io/</link>
+    <link>https://jackiegan.com/</link>
     <description>Recent content on Jackie Gan</description>
     <image>
-      <url>https://jiajingan.github.io/papermod-cover.png</url>
-      <link>https://jiajingan.github.io/papermod-cover.png</link>
+      <url>https://jackiegan.com/papermod-cover.png</url>
+      <link>https://jackiegan.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Mar 2022 16:14:14 -0400</lastBuildDate><atom:link href="https://jiajingan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Mar 2022 16:14:14 -0400</lastBuildDate><atom:link href="https://jackiegan.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intro</title>
-      <link>https://jiajingan.github.io/posts/intro/</link>
+      <link>https://jackiegan.com/posts/intro/</link>
       <pubDate>Tue, 15 Mar 2022 16:14:14 -0400</pubDate>
       
-      <guid>https://jiajingan.github.io/posts/intro/</guid>
+      <guid>https://jackiegan.com/posts/intro/</guid>
       <description>Hello World!
 We all start from somewhere! :))</description>
     </item>
