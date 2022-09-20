@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="Python is a great language for everyone. Easy to understand, and a lot of libraries to mess around with.
 However, managing packages in python can be a pain. Also, installing it the right way.
-I had to personally witness this myself&hellip;&hellip;. Installing Python (on macOS) I&rsquo;m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux).
+I had to personally witness this myself&hellip;&hellip;. Installing Python (on macOS) I&rsquo;m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux). More info please check out this.
 Open terminal and run this command to install homebrew /bin/bash -c &#34;$(curl -fsSL https://raw.">
 <meta name="author" content="Jackie Gan">
 <link rel="canonical" href="https://jackiegan.com/posts/pythonandpipenv/">
@@ -62,12 +62,12 @@ Open terminal and run this command to install homebrew /bin/bash -c &#34;$(curl 
 </noscript><meta property="og:title" content="Python and Pipenv" />
 <meta property="og:description" content="Python is a great language for everyone. Easy to understand, and a lot of libraries to mess around with.
 However, managing packages in python can be a pain. Also, installing it the right way.
-I had to personally witness this myself&hellip;&hellip;. Installing Python (on macOS) I&rsquo;m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux).
+I had to personally witness this myself&hellip;&hellip;. Installing Python (on macOS) I&rsquo;m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux). More info please check out this.
 Open terminal and run this command to install homebrew /bin/bash -c &#34;$(curl -fsSL https://raw." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jackiegan.com/posts/pythonandpipenv/" /><meta property="og:image" content="https://jackiegan.com/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-19T13:16:52-04:00" />
-<meta property="article:modified_time" content="2022-09-19T16:23:28-04:00" />
+<meta property="article:modified_time" content="2022-09-19T22:26:19-04:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jackiegan.com/papermod-cover.png"/>
@@ -75,7 +75,7 @@ Open terminal and run this command to install homebrew /bin/bash -c &#34;$(curl 
 <meta name="twitter:title" content="Python and Pipenv"/>
 <meta name="twitter:description" content="Python is a great language for everyone. Easy to understand, and a lot of libraries to mess around with.
 However, managing packages in python can be a pain. Also, installing it the right way.
-I had to personally witness this myself&hellip;&hellip;. Installing Python (on macOS) I&rsquo;m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux).
+I had to personally witness this myself&hellip;&hellip;. Installing Python (on macOS) I&rsquo;m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux). More info please check out this.
 Open terminal and run this command to install homebrew /bin/bash -c &#34;$(curl -fsSL https://raw."/>
 
 
@@ -105,15 +105,15 @@ Open terminal and run this command to install homebrew /bin/bash -c &#34;$(curl 
   "@type": "BlogPosting",
   "headline": "Python and Pipenv",
   "name": "Python and Pipenv",
-  "description": "Python is a great language for everyone. Easy to understand, and a lot of libraries to mess around with.\nHowever, managing packages in python can be a pain. Also, installing it the right way.\nI had to personally witness this myself\u0026hellip;\u0026hellip;. Installing Python (on macOS) I\u0026rsquo;m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux).\nOpen terminal and run this command to install homebrew /bin/bash -c \u0026#34;$(curl -fsSL https://raw.",
+  "description": "Python is a great language for everyone. Easy to understand, and a lot of libraries to mess around with.\nHowever, managing packages in python can be a pain. Also, installing it the right way.\nI had to personally witness this myself\u0026hellip;\u0026hellip;. Installing Python (on macOS) I\u0026rsquo;m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux). More info please check out this.\nOpen terminal and run this command to install homebrew /bin/bash -c \u0026#34;$(curl -fsSL https://raw.",
   "keywords": [
     
   ],
-  "articleBody": "Python is a great language for everyone. Easy to understand, and a lot of libraries to mess around with.\nHowever, managing packages in python can be a pain. Also, installing it the right way.\nI had to personally witness this myself……. Installing Python (on macOS) I’m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux).\nOpen terminal and run this command to install homebrew /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" Also add this path to dotfile and source it # Python with brew PATH export PATH=\"/usr/local/opt/python/libexec/bin:$PATH\" install python with brew brew install python Install and use Pipenv Pipenv is a virtual environment to isolate your pip packages. I use it to for all my classwork and personal projects.\nOpen terminal and run this command, for more info visit pipenv page. pip3 install --user pipenv Find your pipenv path, your path is usually ‘/Users/joe/Library/Python/3.10’ (yours might differ). python3 -m site --user-base Add your path (pipenv is in bin directory, remember to add /bin) and source it. export PATH=\"$PATH:/Users/joe/Library/Python/3.10/bin\" or add this\nexport PYTHON_BIN_PATH=\"$(python3 -m site --user-base)/bin\" export PATH=\"$PATH:$PYTHON_BIN_PATH\" Pipenv is actually pretty easy to use To install packages, pipenv install such as django, numpy To start environment, pipenv shell Install development packages, pipenv install --dev Uninstall packages, pipenv uninstall Install packages with ‘requirements.txt’, pipenv install -r ./requirements.txt To check if pipenv works and vulnerabilities in packages, pipenv check To update packages pipfile and lock file, pipenv install To display packages and dependencies on those packages, pipenv graph When you are in another environment (For Example you pull from github), your pipenv packages will get messed up. run pipenv lock, looks into the pipfile.lock file then run pipenv install --ignore-pipfile, this will install everything from pipfile.lock(where you left off) To remove pipenv from current dir, pipenv --rm ",
-  "wordCount" : "305",
+  "articleBody": "Python is a great language for everyone. Easy to understand, and a lot of libraries to mess around with.\nHowever, managing packages in python can be a pain. Also, installing it the right way.\nI had to personally witness this myself……. Installing Python (on macOS) I’m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux). More info please check out this.\nOpen terminal and run this command to install homebrew /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" Also add this path to dotfile and source it # Python with brew PATH export PATH=\"/usr/local/opt/python/libexec/bin:$PATH\" install python with brew brew install python Install and use Pipenv Pipenv is a virtual environment to isolate your pip packages. I use it to for all my classwork and personal projects.\nOpen terminal and run this command, for more info visit pipenv page. pip3 install --user pipenv Find your pipenv path, your path is usually ‘/Users/joe/Library/Python/3.10’ (yours might differ). python3 -m site --user-base Add your path (pipenv is in bin directory, remember to add /bin) and source it. export PATH=\"$PATH:/Users/joe/Library/Python/3.10/bin\" or add this\nexport PYTHON_BIN_PATH=\"$(python3 -m site --user-base)/bin\" export PATH=\"$PATH:$PYTHON_BIN_PATH\" Pipenv is actually pretty easy to use To install packages, pipenv install such as django, numpy To start environment, pipenv shell Install development packages, pipenv install --dev Uninstall packages, pipenv uninstall Install packages with ‘requirements.txt’, pipenv install -r ./requirements.txt To check if pipenv works and vulnerabilities in packages, pipenv check To update packages pipfile and lock file, pipenv install To display packages and dependencies on those packages, pipenv graph When you are in another environment (For Example you pull from github), your pipenv packages will get messed up. run pipenv lock, looks into the pipfile.lock file then run pipenv install --ignore-pipfile, this will install everything from pipfile.lock(where you left off) To remove pipenv from current dir, pipenv --rm ",
+  "wordCount" : "311",
   "inLanguage": "en",
   "datePublished": "2022-09-19T13:16:52-04:00",
-  "dateModified": "2022-09-19T16:23:28-04:00",
+  "dateModified": "2022-09-19T22:26:19-04:00",
   "author":{
     "@type": "Person",
     "name": "Jackie Gan"
@@ -212,7 +212,7 @@ Open terminal and run this command to install homebrew /bin/bash -c &#34;$(curl 
       Python and Pipenv
     </h1>
     <div class="post-meta">
-<span title='2022-09-19 13:16:52 -0400 EDT'>2022-09-19</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;305 words&nbsp;·&nbsp;Jackie Gan&nbsp;|&nbsp;<a href="https://github.com/jiajingan/site/tree/main/jackiegansite/content/posts/pythonAndPipenv.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+<span title='2022-09-19 13:16:52 -0400 EDT'>2022-09-19</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;311 words&nbsp;·&nbsp;Jackie Gan&nbsp;|&nbsp;<a href="https://github.com/jiajingan/site/tree/main/jackiegansite/content/posts/pythonAndPipenv.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> <div class="toc">
@@ -239,7 +239,7 @@ However, managing packages in python can be a pain. Also, installing it the righ
 </ul>
 <hr>
 <h1 id="installing-python-on-macos">Installing Python (on macOS)<a hidden class="anchor" aria-hidden="true" href="#installing-python-on-macos">#</a></h1>
-<p>I&rsquo;m a big fan of <a href="https://brew.sh/">brew</a>, brew is a Package Manager for macOS (something like apt-get in linux).</p>
+<p>I&rsquo;m a big fan of <a href="https://brew.sh/">brew</a>, brew is a Package Manager for macOS (something like apt-get in linux). More info please check out <a href="https://docs.python-guide.org/starting/install3/osx/">this</a>.</p>
 <ol>
 <li>Open terminal and run this command to install homebrew</li>
 </ol>

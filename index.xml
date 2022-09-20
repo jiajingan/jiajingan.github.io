@@ -18,7 +18,7 @@
       <guid>https://jackiegan.com/posts/pythonandpipenv/</guid>
       <description>Python is a great language for everyone. Easy to understand, and a lot of libraries to mess around with.
 However, managing packages in python can be a pain. Also, installing it the right way.
-I had to personally witness this myself&amp;hellip;&amp;hellip;. Installing Python (on macOS) I&amp;rsquo;m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux).
+I had to personally witness this myself&amp;hellip;&amp;hellip;. Installing Python (on macOS) I&amp;rsquo;m a big fan of brew, brew is a Package Manager for macOS (something like apt-get in linux). More info please check out this.
 Open terminal and run this command to install homebrew /bin/bash -c &amp;#34;$(curl -fsSL https://raw.</description>
     </item>
     
