@@ -65,7 +65,7 @@ j moving down k moving up h moving left l moving right w moving forward of a wor
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jackiegan.com/posts/vim/" /><meta property="og:image" content="https://jackiegan.com/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-11T11:37:58-04:00" />
-<meta property="article:modified_time" content="2022-09-14T17:34:15-04:00" />
+<meta property="article:modified_time" content="2022-09-22T16:12:53-04:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jackiegan.com/papermod-cover.png"/>
@@ -106,11 +106,11 @@ j moving down k moving up h moving left l moving right w moving forward of a wor
   "keywords": [
     
   ],
-  "articleBody": "Learning vim(neovim) from the goat himself, ThePrimeagen.\nVim As Your Editor (1/6): The Basic Vim Movements\nj moving down k moving up h moving left l moving right w moving forward of a word b moving backward of a word “try not to rely on your arrow keys” yy yank the line(copy it), store in the register p paste the line dd delete the line u undo the line when you want to delete a function, dd + dd + dd isn’t practical shift + v visual line mode(highlights the line), in this mode you can use jk or other commands from above. Like y,j,k,h,l and d to delete v visual word mode(hightlights where you start), in this mode you can use other commands too i insert mode, you can type anything. to escape insert mode there is ctrl + c or esc or ctrl + [ Usually, your bottom corner shows what mode you’re in you can combine vim commands together d + w or d + j or d + y :w to save file Practice until you’re comfortable with all of these commands ",
-  "wordCount" : "186",
+  "articleBody": "Learning vim(neovim) from the goat himself, ThePrimeagen.\nVim As Your Editor (1/6): The Basic Vim Movements\nj moving down k moving up h moving left l moving right w moving forward of a word b moving backward of a word “try not to rely on your arrow keys” yy yank the line(copy it), store in the register p paste the line dd delete the line u undo the line when you want to delete a function, dd + dd + dd isn’t practical shift + v visual line mode(highlights the line), in this mode you can use jk or other commands from above. Like y,j,k,h,l and d to delete v visual word mode(hightlights where you start), in this mode you can use other commands too i insert mode, you can type anything. to escape insert mode there is ctrl + c or esc or ctrl + [ Usually, your bottom corner shows what mode you’re in you can combine vim commands together d + w or d + j or d + y :w to save file note: Practice until you’re comfortable with all of these commands Vim As Your Editor (2/6): Foundation for Speed(Part 2 here we go)\no start insert mode in the new line below shift + o start insert mode in the new line above shift + p paste one line above a insert mode at the end of the word shift + i insert mode at begining of the line shift + a insert mode at end of the the line / command mode / + 'function' command mode searching for function n hop next match or shift + n hop backward a match * jump to the word next to the cursor in hopping mode # another way to hop backward a match note: we are starting to get fasttttttttt, keep practicing ",
+  "wordCount" : "308",
   "inLanguage": "en",
   "datePublished": "2022-09-11T11:37:58-04:00",
-  "dateModified": "2022-09-14T17:34:15-04:00",
+  "dateModified": "2022-09-22T16:12:53-04:00",
   "author":{
     "@type": "Person",
     "name": "Jackie Gan"
@@ -209,7 +209,7 @@ j moving down k moving up h moving left l moving right w moving forward of a wor
       Vim
     </h1>
     <div class="post-meta">
-<span title='2022-09-11 11:37:58 -0400 EDT'>2022-09-11</span>&nbsp;·&nbsp;<span title='2022-09-14 17:34:15 -0400 EDT'>(updated September 14, 2022)</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;186 words&nbsp;·&nbsp;Jackie Gan&nbsp;|&nbsp;<a href="https://github.com/jiajingan/site/tree/main/jackiegansite/content/posts/vim.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+<span title='2022-09-11 11:37:58 -0400 EDT'>2022-09-11</span>&nbsp;·&nbsp;<span title='2022-09-22 16:12:53 -0400 EDT'>(updated September 22, 2022)</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;308 words&nbsp;·&nbsp;Jackie Gan&nbsp;|&nbsp;<a href="https://github.com/jiajingan/site/tree/main/jackiegansite/content/posts/vim.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> 
@@ -236,7 +236,26 @@ j moving down k moving up h moving left l moving right w moving forward of a wor
 <li>Usually, your bottom corner shows what mode you&rsquo;re in</li>
 <li>you can combine vim commands together <code>d + w</code> or <code>d + j</code> or <code>d + y</code></li>
 <li><code>:w</code> to save file</li>
-<li>Practice until you&rsquo;re comfortable with all of these commands</li>
+<li>note: Practice until you&rsquo;re comfortable with all of these commands</li>
+</ul>
+<hr>
+<p><em><strong>Vim As Your Editor (2/6): Foundation for Speed(Part 2 here we go)</strong></em></p>
+<ul>
+<li><code>o</code> start insert mode in the new line below</li>
+<li><code>shift + o</code> start insert mode in the new line above</li>
+<li><code>shift + p</code> paste one line above</li>
+<li><code>a</code> insert mode at the end of the word</li>
+<li><code>shift + i</code> insert mode at begining of the line</li>
+<li><code>shift + a</code> insert mode at end of the the line</li>
+<li><code>/</code> command mode
+<ul>
+<li><code>/ + 'function'</code> command mode searching for function</li>
+<li><code>n</code> hop next match or <code>shift + n</code> hop backward a match</li>
+</ul>
+</li>
+<li><code>*</code> jump to the word next to the cursor in hopping mode</li>
+<li><code>#</code> another way to hop backward a match</li>
+<li>note: we are starting to get fasttttttttt, keep practicing</li>
 </ul>
 
 
