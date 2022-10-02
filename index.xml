@@ -9,7 +9,17 @@
       <link>https://jackiegan.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Sep 2022 13:16:52 -0400</lastBuildDate><atom:link href="https://jackiegan.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Oct 2022 15:08:30 -0400</lastBuildDate><atom:link href="https://jackiegan.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Object Oriented Programming with Java</title>
+      <link>https://jackiegan.com/posts/oop/</link>
+      <pubDate>Sat, 01 Oct 2022 15:08:30 -0400</pubDate>
+      
+      <guid>https://jackiegan.com/posts/oop/</guid>
+      <description>Back in my sophomore year I got rejected by 3 internships (or more) because my OOP skills weren&amp;rsquo;t good enough. I want to make this post to remind myself I know the concepts. Java Basic Concepts
+What is a class? A class is a blueprint of anything, I mean literally anything. You can also have nested class too (this is too advanced for now). For example, a car has an engine, mpg, top speed, gear type, gear amount, and etc but the class will hold all of theses.</description>
+    </item>
+    
     <item>
       <title>Python and Pipenv</title>
       <link>https://jackiegan.com/posts/pythonandpipenv/</link>

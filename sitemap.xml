@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jackiegan.com/</loc>
-    <lastmod>2022-09-22T16:12:53-04:00</lastmod>
+    <lastmod>2022-10-02T01:05:05-04:00</lastmod>
+  </url><url>
+    <loc>https://jackiegan.com/posts/oop/</loc>
+    <lastmod>2022-10-02T01:05:05-04:00</lastmod>
   </url><url>
     <loc>https://jackiegan.com/posts/</loc>
-    <lastmod>2022-09-22T16:12:53-04:00</lastmod>
+    <lastmod>2022-10-02T01:05:05-04:00</lastmod>
   </url><url>
     <loc>https://jackiegan.com/posts/pythonandpipenv/</loc>
     <lastmod>2022-09-19T22:26:19-04:00</lastmod>
