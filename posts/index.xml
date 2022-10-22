@@ -9,7 +9,16 @@
       <link>https://jackiegan.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 01 Oct 2022 15:08:30 -0400</lastBuildDate><atom:link href="https://jackiegan.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Oct 2022 17:43:22 -0400</lastBuildDate><atom:link href="https://jackiegan.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL</title>
+      <link>https://jackiegan.com/posts/sql/</link>
+      <pubDate>Fri, 21 Oct 2022 17:43:22 -0400</pubDate>
+      
+      <guid>https://jackiegan.com/posts/sql/</guid>
+      <description>In this past couple OAs (IBM, Citizens Bank just to name a few), I have been taking L&amp;rsquo;s on the database questions. As a CS major in my university, SQL is not part of our curriculum. So I decided to make this post to go over some basic concepts in SQL. SQL is a query language and data is usually stored in tables After some research, I have decided to use MySQL since it is the most popular database.</description>
+    </item>
+    
     <item>
       <title>Object Oriented Programming with Java</title>
       <link>https://jackiegan.com/posts/oop/</link>
