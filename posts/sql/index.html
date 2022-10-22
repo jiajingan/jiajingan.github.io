@@ -61,7 +61,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jackiegan.com/posts/sql/" /><meta property="og:image" content="https://jackiegan.com/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-10-21T17:43:22-04:00" />
-<meta property="article:modified_time" content="2022-10-21T17:43:22-04:00" />
+<meta property="article:modified_time" content="2022-10-22T13:48:34-04:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jackiegan.com/papermod-cover.png"/>
@@ -100,11 +100,11 @@
   "keywords": [
     
   ],
-  "articleBody": " In this past couple OAs (IBM, Citizens Bank just to name a few), I have been taking L’s on the database questions. As a CS major in my university, SQL is not part of our curriculum. So I decided to make this post to go over some basic concepts in SQL. SQL is a query language and data is usually stored in tables After some research, I have decided to use MySQL since it is the most popular database. In the future I will also cover some PostgreSql Resources https://www.w3schools.com/sql/default.asp https://sqlzoo.net/wiki/SQL_Tutorial https://www.sql-practice.com/ https://pgexercises.com/ Basic concepts SELECT - extracts data from a database SELECT CustomerName, City FROM Customers;, CustomerName and City are the headers, Customers is the table name SELECT DISTINCT CustomerName, City FROM Customers;, the distinct keyword will select unique values from customername(e.g. joe will not appear twice in the query). SELECT * FROM Customers WHERE Country='Mexico';, this query will select everything from Customers tables where country is Mexico. syntax for selectSELECT column1, column2, ... FROM table_name; syntax for select with distinct SELECT DISTINCT column1, column2, ... FROM table_name; syntax for select with where SELECT column1, column2, ... FROM table_name WHERE condition; we can also used key words like or, and, and not syntax for where and WHERE condition1 AND condition2 AND condition3 ...;, for where or WHERE condition1 OR condition2 OR condition3 ...;, for where not WHERE NOT condition; syntax SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC|DESC;, ASC(ascending) is default and DESC(descending) needs manual input UPDATE - updates data in a database UPDATE table_name SET column1 = value1, column2 = value2, ...WHERE condition;, use set to pick columns and where to select specific condition DELETE - deletes data from a database DELETE FROM table_name WHERE condition; DELETE FROM table_name; deleting all the data but not the table INSERT INTO - inserts new data into a database syntax INSERT INTO table_name (column1, column2, column3, ...)VALUES (value1, value2, value3, ...); , you don’t always need to list out the columns Functions MAX(), MIN(), COUNT(), AVG(), SUM() example: SELECT COUNT(column_name) FROM table_name WHERE condition; LIKE - check patterns SELECT column1, column2, ... FROM table_name WHERE columnN LIKE pattern; please refer to other resources in the pattern, there is also wildcard patterns IN, BETWEEN, ALIASES IN selects a certain value, WHERE column_name IN (value1, value2, ...); BETWEEN is between 2 values, WHERE column_name BETWEEN value1 AND value2; ALIASES is just shorting the name, SELECT column_name AS alias_name FROM table_name; JOINS There is 4 different types of joins INNER JOIN is like intersection of a two sets LEFT JOIN is getting the insection and the left RIGHT JOIN is getting the insection and the right FULL JOIN is getting like union, group everything together example: SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.column_name = table2.column_name; GROUP BY - group into summary rows We can also use functions in these example: SELECT COUNT(CustomerID), Country FROM CustomersGROUP BY Country; CREATE DATABASE - creates a new database CREATE DATABASE databasename; ALTER DATABASE - modifies a database CREATE TABLE - creates a new table CREATE TABLE table_name ( column1 datatype, column2 datatype,column3 datatype, ....); ALTER TABLE - modifies a table DROP TABLE - deletes a table DROP TABLE table_name; TRUNCATE TABLE table_name; delete database not table itself CREATE INDEX - creates an index (search key) syntax CREATE INDEX index_name ON table_name (column1, column2, ...); creates a index column DROP INDEX - deletes an index different server has different way to drop index syntax for MySQL ALTER TABLE table_name DROP INDEX index_name; SQL is not case sensitive SQL statements ends with a semicolon ",
-  "wordCount" : "600",
+  "articleBody": " In this past couple OAs (IBM, Citizens Bank just to name a few), I have been taking L’s on the database questions. As a CS major in my university, SQL is not part of our curriculum. So I decided to make this post to go over some basic concepts in SQL. SQL is a query language and data is usually stored in tables After some research, I have decided to use MySQL since it is the most popular database. In the future I will also cover some PostgreSql Resources https://www.w3schools.com/sql/default.asp https://sqlzoo.net/wiki/SQL_Tutorial https://www.sql-practice.com/ https://pgexercises.com/ Basic concepts SELECT - extracts data from a database SELECT CustomerName, City FROM Customers;, CustomerName and City are the headers, Customers is the table name SELECT DISTINCT CustomerName, City FROM Customers;, the distinct keyword will select unique values from customername(e.g. joe will not appear twice in the query). SELECT * FROM Customers WHERE Country='Mexico';, this query will select everything from Customers tables where country is Mexico. syntax for selectSELECT column1, column2, ... FROM table_name; syntax for select with distinct SELECT DISTINCT column1, column2, ... FROM table_name; syntax for select with where SELECT column1, column2, ... FROM table_name WHERE condition; we can also used key words like or, and, and not syntax for where and WHERE condition1 AND condition2 AND condition3 ...;, for where or WHERE condition1 OR condition2 OR condition3 ...;, for where not WHERE NOT condition; syntax SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC|DESC;, ASC(ascending) is default and DESC(descending) needs manual input UPDATE - updates data in a database UPDATE table_name SET column1 = value1, column2 = value2, ...WHERE condition;, use set to pick columns and where to select specific condition DELETE - deletes data from a database DELETE FROM table_name WHERE condition; DELETE FROM table_name; deleting all the data but not the table INSERT INTO - inserts new data into a database syntax INSERT INTO table_name (column1, column2, column3, ...)VALUES (value1, value2, value3, ...); , you don’t always need to list out the columns Functions MAX(), MIN(), COUNT(), AVG(), SUM() example: SELECT COUNT(column_name) FROM table_name WHERE condition; LIKE - check patterns SELECT column1, column2, ... FROM table_name WHERE columnN LIKE pattern; please refer to other resources in the pattern, there is also wildcard patterns IN, BETWEEN, ALIASES IN selects a certain value, WHERE column_name IN (value1, value2, ...); BETWEEN is between 2 values, WHERE column_name BETWEEN value1 AND value2; ALIASES is just shorting the name, SELECT column_name AS alias_name FROM table_name; JOINS There is 4 different types of joins INNER JOIN is like intersection of a two sets LEFT JOIN is getting the insection and the left RIGHT JOIN is getting the insection and the right FULL JOIN is getting like union, group everything together example: SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.column_name = table2.column_name; GROUP BY - group into summary rows We can also use functions in these example: SELECT COUNT(CustomerID), Country FROM CustomersGROUP BY Country; CREATE DATABASE - creates a new database CREATE DATABASE databasename; CREATE TABLE - creates a new table CREATE TABLE table_name ( column1 datatype, column2 datatype,column3 datatype, ....); ALTER TABLE - modifies a table syntax ALTER TABLE table_name ADD column_name datatype; or you can also drop columns DROP TABLE - deletes a table DROP TABLE table_name; TRUNCATE TABLE table_name; delete database not table itself CREATE INDEX - creates an index (search key) syntax CREATE INDEX index_name ON table_name (column1, column2, ...); creates a index column DROP INDEX - deletes an index different server has different way to drop index syntax for MySQL ALTER TABLE table_name DROP INDEX index_name; SQL is not case sensitive SQL statements ends with a semicolon ",
+  "wordCount" : "607",
   "inLanguage": "en",
   "datePublished": "2022-10-21T17:43:22-04:00",
-  "dateModified": "2022-10-21T17:43:22-04:00",
+  "dateModified": "2022-10-22T13:48:34-04:00",
   "author":{
     "@type": "Person",
     "name": "Jackie Gan"
@@ -203,23 +203,10 @@
       SQL
     </h1>
     <div class="post-meta">
-<span title='2022-10-21 17:43:22 -0400 EDT'>2022-10-21</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;600 words&nbsp;·&nbsp;Jackie Gan&nbsp;|&nbsp;<a href="https://github.com/jiajingan/site/tree/main/jackiegansite/content/posts/sql.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+<span title='2022-10-21 17:43:22 -0400 EDT'>2022-10-21</span>&nbsp;·&nbsp;<span title='2022-10-22 13:48:34 -0400 EDT'>(updated October 22, 2022)</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;607 words&nbsp;·&nbsp;Jackie Gan&nbsp;|&nbsp;<a href="https://github.com/jiajingan/site/tree/main/jackiegansite/content/posts/sql.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
-
-        <div class="inner"><ul>
-                <li>
-                    <a href="#alter-database---modifies-a-database" aria-label="ALTER DATABASE - modifies a database">ALTER DATABASE - modifies a database</a>
-                </li>
-            </ul>
-        </div>
-    </details>
-</div>
+  </header> 
 
   <div class="post-content"><ul>
 <li>In this past couple OAs (IBM, Citizens Bank just to name a few), I have been taking L&rsquo;s on the database questions. As a CS major in my university, SQL is not part of our curriculum. So I decided to make this post to go over some basic concepts in SQL.</li>
@@ -307,15 +294,16 @@
 <li><code>CREATE DATABASE databasename;</code></li>
 </ul>
 </li>
-<li>
-<h2 id="alter-database---modifies-a-database">ALTER DATABASE - modifies a database<a hidden class="anchor" aria-hidden="true" href="#alter-database---modifies-a-database">#</a></h2>
-</li>
 <li>CREATE TABLE - creates a new table
 <ul>
 <li><code>CREATE TABLE table_name ( column1 datatype, column2 datatype,column3 datatype, ....);</code></li>
 </ul>
 </li>
-<li>ALTER TABLE - modifies a table</li>
+<li>ALTER TABLE - modifies a table
+<ul>
+<li>syntax <code>ALTER TABLE table_name ADD column_name datatype;</code> or you can also drop columns</li>
+</ul>
+</li>
 <li>DROP TABLE - deletes a table
 <ul>
 <li><code>DROP TABLE table_name;</code></li>
